@@ -3,16 +3,20 @@
 
 int main()
 {
-    int a = 1;
-    int b = 2;
-    printf("%d, %d\n", a, b);
+    int a;
+    int b;
+    printf("enter two values: ");
+    scanf("%d %d", &a, &b);
+    printf("a= %d, b= %d\n", a, b);
+
 
     //value switch
 
-    a = 2;
-    b = 1;
+    int abc = a;
+    a = b;
+    b = abc;
 
-    printf("%d, %d", a, b);
+    printf("a= %d, a= %d", a, b);
 
     return 0;
 }
